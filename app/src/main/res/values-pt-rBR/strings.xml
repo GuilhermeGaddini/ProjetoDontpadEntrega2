@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Projeto DontPad Entrega 2</string>
+    <string name="No_img_on_gallery">Nenhuma imagem foi encontrada.</string>
+    <string name="quero_me_cadastrar">Cadastrar</string>
+    <string name="tag">Tag/Etiqueta</string>
+    <string name="no_camera">Não foi possível capturar imagens</string>
+    <string name="newTag">Nova Etiqueta</string>
+    <string name="image_selected">Imagem da Galeria</string>
+    <string name="hint_tag">Insira a Tag para associar ao texto e a imagem</string>
+    <string name="enter_text">Insira seu texto aqui!</string>
+    <string name="dica_senha">Insira sua senha</string>
+    <string name="dica_login">Insira seu login</string>
+    <string name="current_page">Página atual</string>
+    <string name="clickToOpen">Clique para visualizar o texto</string>
+    <string name="button_text">Texto</string>
+    <string name="button_picture">Imagem</string>
+    <string name="Camera">sinal de câmera</string>
+    <string name="button_save">Salvar</string>
+</resources>
