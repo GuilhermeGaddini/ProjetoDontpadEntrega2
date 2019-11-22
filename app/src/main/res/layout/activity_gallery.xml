@@ -83,8 +83,4 @@
         android:gravity="center"
         android:text="@string/button_picture"
         android:textSize="@dimen/text_size_button" />
-
-
-
-
 </GridLayout>

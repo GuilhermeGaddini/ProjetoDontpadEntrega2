@@ -18,10 +18,10 @@ public class TagAndTextActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.projetodontpadentrega2.R.layout.activity_tag_and_text);
-        tagEditText = findViewById(com.example.projetodontpadentrega2.R.id.tagEditText);
-        mainActivityTextBox = findViewById(com.example.projetodontpadentrega2.R.id.activityMainTextBox);
-        buttonPicture = findViewById(com.example.projetodontpadentrega2.R.id.activityMainButtonPicture);
+        setContentView(R.layout.activity_tag_and_text);
+        tagEditText = findViewById(R.id.tagEditText);
+        mainActivityTextBox = findViewById(R.id.activityMainTextBox);
+        buttonPicture = findViewById(R.id.activityMainButtonPicture);
         intent = getIntent();
         tagEditText.setText(intent.getStringExtra("tag_save"));
         mainActivityTextBox.setText(intent.getStringExtra("text_save"));
@@ -33,5 +33,6 @@ public class TagAndTextActivity extends AppCompatActivity {
             intent.putExtra("text_save",mainActivityTextBoxSave);
             startActivity(intent);
         });
+
     }
 }

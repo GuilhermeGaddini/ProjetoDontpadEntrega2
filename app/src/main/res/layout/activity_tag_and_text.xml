@@ -8,8 +8,7 @@
     android:rowCount="6"
     android:columnCount="2"
     tools:context=".TagAndTextActivity"
-    android:useDefaultMargins="true"
-    >
+    android:useDefaultMargins="true">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,7 +43,6 @@
         android:hint="@string/enter_text"
         android:inputType="text"
         />
-
 
     <Button
         android:id="@+id/activityMainButtonPicture"

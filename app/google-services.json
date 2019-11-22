@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "46944544544",
+    "firebase_url": "https://projetodontpadentrega2.firebaseio.com",
+    "project_id": "projetodontpadentrega2",
+    "storage_bucket": "projetodontpadentrega2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46944544544:android:0a13b30b9d969778f59945",
+        "android_client_info": {
+          "package_name": "com.example.projetodontpadentrega2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46944544544-fan753jb0qkf6iu8d6iejfpoocrngr7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJpyeEN8g0581cv1bq8pt9pqp1tM2EEaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46944544544-fan753jb0qkf6iu8d6iejfpoocrngr7h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

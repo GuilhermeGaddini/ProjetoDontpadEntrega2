@@ -18,9 +18,9 @@ public class NewUserActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.projetodontpadentrega2.R.layout.activity_new_user);
-        loginNovoUsuarioEditText = findViewById(com.example.projetodontpadentrega2.R.id.loginNovoUsuarioEditText);
-        senhaNovoUsuarioEditText = findViewById(com.example.projetodontpadentrega2.R.id.senhaNovoUsuarioEditText);
+        setContentView(R.layout.activity_new_user);
+        loginNovoUsuarioEditText = findViewById(R.id.loginNovoUsuarioEditText);
+        senhaNovoUsuarioEditText = findViewById(R.id.senhaNovoUsuarioEditText);
         mAuth = FirebaseAuth.getInstance();
     }
 
@@ -28,7 +28,7 @@ public class NewUserActivity extends AppCompatActivity {
         String login = loginNovoUsuarioEditText.getText().toString();
         String senha = senhaNovoUsuarioEditText.getText().toString();
         if (loginNovoUsuarioEditText.getText() != null && !loginNovoUsuarioEditText.getText().toString().isEmpty()
-                && senhaNovoUsuarioEditText.getText() != null && !senhaNovoUsuarioEditText.getText().toString().isEmpty())
+            && senhaNovoUsuarioEditText.getText() != null && !senhaNovoUsuarioEditText.getText().toString().isEmpty())
         {
             Task<AuthResult> task = mAuth.createUserWithEmailAndPassword(login, senha);
             task.addOnSuccessListener(authResult -> {
@@ -37,11 +37,11 @@ public class NewUserActivity extends AppCompatActivity {
             });
             task.addOnFailureListener(e -> {
                 e.printStackTrace();
-                Toast.makeText(NewUserActivity.this, "Algo deu errado no cadastro. Por favor tente novamente mais tarde.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(NewUserActivity.this, "Algo deu errado ao finalizar o cadstro. Tente novamente mais tarde", Toast.LENGTH_SHORT).show();
             });
         }else{
-            Toast.makeText(this, "Usuário ou senha incorretos. Tente novamente.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Usuário ou senha não conferem", Toast.LENGTH_SHORT).show();
         }
     }
-}
 
+}

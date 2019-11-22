@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Projeto DontPad Entrega 2</string>
+    <string name="tag">TAG</string>
+    <string name="newTag">New Tag</string>
+    <string name="button_save">Save</string>
+    <string name="button_picture">Add a Picture</string>
+    <string name="button_text">Text</string>
+    <string name="quero_me_cadastrar">SignUp</string>
+    <string name="current_page">Current page</string>
+    <string name="no_camera">Unable to take any pictures.</string>
+    <string name="image_selected">Image From Gallery</string>
+    <string name="No_img_on_gallery">No image was found on gallery</string>
+    <string name="Camera">Camera sign</string>
+    <string name="REQ_CODE_CAMERA" translatable="false">1001</string>
+    <string name="PICK_IMAGE_REQUEST" translatable="false">100</string>
+    <string name="hint_tag">Insert the Tag to associate with text and image</string>
+    <string name="enter_text">Insert your text here!</string>
+    <string name="dica_login">Insert your login</string>
+    <string name="dica_senha">Insert your password</string>
+    <string name="clickToOpen">Click to view the text</string>
+    <string name="signup">Insert your E-mail</string>
+    <string name="passwdSignup">Insert a password. It has to have a 6 letters minimum.</string>
+    <string name="gallery">Picture added into your Gallery</string>
+    <string name="missingField">You must fill every field and add a image.</string>
+</resources>

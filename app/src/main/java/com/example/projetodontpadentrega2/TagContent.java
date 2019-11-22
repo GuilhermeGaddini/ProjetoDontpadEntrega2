@@ -2,28 +2,24 @@ package com.example.projetodontpadentrega2;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.widget.ImageView;
 
 public class TagContent implements Parcelable, Comparable<TagContent> {
 
     private String text;
     private String tag;
     private String email;
-    private ImageView image;
-
-    public TagContent(){
-    }
-    public TagContent(String text, String tag, String email, ImageView image) {
+    private String image;
+    public TagContent(String text, String tag, String email, String image) {
         this.text = text;
         this.tag = tag;
         this.email = email;
         this.image = image;
     }
-
     protected TagContent(Parcel in) {
         text = in.readString();
         tag = in.readString();
         email = in.readString();
+        image = in.readString();
     }
 
     public static final Creator<TagContent> CREATOR = new Creator<TagContent>() {
@@ -54,20 +50,16 @@ public class TagContent implements Parcelable, Comparable<TagContent> {
         this.tag = tag;
     }
 
-    public ImageView getImage() {
-        return image;
-    }
-
-    public void setImage(ImageView image) {
-        this.image = image;
-    }
-
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     @Override
@@ -85,6 +77,6 @@ public class TagContent implements Parcelable, Comparable<TagContent> {
         dest.writeString(text);
         dest.writeString(tag);
         dest.writeString(email);
+        dest.writeString(image);
     }
 }
-
